@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignMyNight\Mongodb\Passport;
+namespace Medusa\Mongodb\Passport;
 
 use Jenssegers\Mongodb\Eloquent\Model;
 
@@ -68,5 +68,16 @@ class Client extends Model
     public function firstParty()
     {
         return $this->personal_access_client || $this->password_client;
+    }
+
+    /**
+     * Normally, this would be the primary key of the model, but since this is for oauth, this is the
+     * field we want to use to identify client requests
+     *
+     * @return string
+     */
+    public function getKeyName()
+    {
+        return 'client_id';
     }
 }

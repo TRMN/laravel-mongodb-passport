@@ -1,7 +1,7 @@
 {
-    "name": "designmynight/laravel-mongodb-passport",
+    "name": "medusa/laravel-mongodb-passport",
     "description": "A package to allow laravel/passport use with jenssegers/laravel-mongodb",
-    "homepage": "https://github.com/designmynight/laravel-mongodb-passport",
+    "homepage": "https://github.com/TRMN/laravel-mongodb-passport",
     "license": "MIT",
     "keywords": [
         "laravel",
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DesignMyNight\\Mongodb\\": "src"
+            "Medusa\\Mongodb\\": "src"
         }
     },
     "authors": [
@@ -32,7 +32,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DesignMyNight\\Mongodb\\MongodbPassportServiceProvider"
+                "Medusa\\Mongodb\\MongodbPassportServiceProvider"
             ]
         }
     }

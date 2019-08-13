@@ -1,12 +1,12 @@
 <?php
 
-namespace DesignMyNight\Mongodb;
+namespace Medusa\Mongodb;
 
 use Illuminate\Support\ServiceProvider;
-use DesignMyNight\Mongodb\Passport\AuthCode;
-use DesignMyNight\Mongodb\Passport\Client;
-use DesignMyNight\Mongodb\Passport\PersonalAccessClient;
-use DesignMyNight\Mongodb\Passport\Token;
+use Medusa\Mongodb\Passport\AuthCode;
+use Medusa\Mongodb\Passport\Client;
+use Medusa\Mongodb\Passport\PersonalAccessClient;
+use Medusa\Mongodb\Passport\Token;
 
 class MongodbPassportServiceProvider extends ServiceProvider
 {
