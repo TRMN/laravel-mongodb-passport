@@ -80,4 +80,24 @@ class Client extends Model
     {
         return 'client_id';
     }
+
+    /**
+     * Determine if the client should skip the authorization prompt.
+     *
+     * @return bool
+     */
+    public function skipsAuthorization()
+    {
+        return false;
+    }
+    
+    /**
+     * Determine if the client is a confidential client.
+     *
+     * @return bool
+     */
+    public function confidential()
+    {
+        return ! empty($this->secret);
+    }
 }
